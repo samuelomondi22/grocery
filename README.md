@@ -14,10 +14,10 @@
 
 # Collaborators
 
-Samuel Omondi 
-Daniel Collins
-Sarah Flores
-Moon Moon
+Samuel Omondi, 
+Daniel Collins,
+Sarah Flores,
+Moon Moon,
 Daryl Appleton
 
 # Useful Websites
