@@ -2,15 +2,13 @@
 
 # Overview
 
-{Important!  Do not say in this section that this is college assignment.}
-
-{Provide a description of your team project.  Describe how to use the software.}
+This is a program that will be used as a web app to search for groceries in the nearest store to the user. It will require a login and create an account for the user to keep track of things they have searched. It will tell the user how far away the store is and what it groceries are available to the user according to what they have searched. 
 
 # Development Environment
 
 {Describe the tools that you used to develop the software}
 
-{Describe the programming language that you used and any libraries.}
+Python, SQL, Django, HTML, CSS, JavaScript 
 
 # Collaborators
 
