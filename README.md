@@ -1,4 +1,4 @@
-# grocery
+# Grocery
 
 # Overview
 
@@ -8,15 +8,20 @@ This is a program that will be used as a web app to search for groceries in the 
 
 {Describe the tools that you used to develop the software}
 
-Python, SQL, Django, HTML, CSS, JavaScript 
+* Python 
+* SQL 
+* Django 
+* HTML 
+* CSS 
+* JavaScript 
 
 # Collaborators
 
-Samuel Omondi, 
-Daniel Collins,
-Sarah Flores,
-Moon Moon,
-Daryl Appleton
+* Samuel Omondi 
+* Daniel Collins
+* Sarah Flores
+* Moon Moon
+* Daryl Appleton
 
 # Useful Websites
 
@@ -26,7 +31,6 @@ Daryl Appleton
 
 # Future Work
 
-{Make a list of things that you need to fix, improve, and add in the future.}
-* Item 1
-* Item 2
-* Item 3
+* Researching and building the search feature
+* Researching and building the price and where to buy feedback
+* Research and build the login and sign-up
