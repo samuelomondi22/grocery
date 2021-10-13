@@ -14,6 +14,7 @@ class CrudAPIView(APIView):
         except groceries.DoesNotExist:
             raise Http404
 
+    # READ all groceries
     def get(self, request, pk=None, format=None):
         if pk:
             data = self.get_object(pk)
@@ -40,5 +41,38 @@ class CrudAPIView(APIView):
             'message': 'Item Added Successfully',
             'data': serializer.data
         }
+        return response
+
+    # UPDATE
+    def put(self, request, pk=None, format=None):
+            # Get the todo to update
+        todo_to_update = groceries.objects.get(pk=pk)
+
+        # Pass the instance to update to the serializer, and the data and also partial to the serializer
+        # Passing partial will allow us to update without passing the entire Todo object
+        serializer = TodoSerializer(
+            instance=todo_to_update, data=request.data, partial=True)
+
+        serializer.is_valid(raise_exception=True)
+        serializer.save()
+        response = Response()
+
+        response.data = {
+            'message': 'Item Updated Successfully',
+            'data': serializer.data
+        }
 
         return response
+
+    # DELETED
+    def delete(self, request, pk, format=None):
+        todo_to_delete =  groceries.objects.get(pk=pk)
+
+        # delete the todo
+        todo_to_delete.delete()
+
+        return Response({
+            'message': 'Item Deleted Successfully'
+        })
+
+        
