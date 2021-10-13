@@ -26,7 +26,7 @@ This is a program that will be used as a web app to search for groceries in the 
 # Useful Websites
 
 {Make a list of websites that you found helpful in this project}
-* [Web Site Name](http://url.link.goes.here)
+* [django](https://docs.djangoproject.com/en/3.2/topics/class-based-views/)
 * [Web Site Name](http://url.link.goes.here)
 
 # Future Work
