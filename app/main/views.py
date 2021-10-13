@@ -5,10 +5,6 @@ from django.http import HttpResponse
 from .models import groceries
 from django.db.models import Q
 
-# Create your views here.
-def index(request):
-    return HttpResponse("Hello World!")
-
 def book_by_id(request, book_id):
     book = groceries.objects.get(pk=book_id)
     return render(request, 'book_details.html', {'book':book})
