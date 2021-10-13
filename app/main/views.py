@@ -9,9 +9,9 @@ from django.db.models import Q
 def index(request):
     return HttpResponse("Hello World!")
 
-# def book_by_id(request, book_id):
-#     book = Book.objects.get(pk=book_id)
-#     return render(request, 'book_details.html', {'book':book})
+def book_by_id(request, book_id):
+    book = Book.objects.get(pk=book_id)
+    return render(request, 'book_details.html', {'book':book})
 
 class HomePageView(TemplateView):
     template_name = 'home.html'
