@@ -29,9 +29,18 @@ This is a program that will be used as a web app to search for groceries in the 
 * [django](https://docs.djangoproject.com/en/3.2/topics/class-based-views/)
 * [LearnDjango](https://learndjango.com/tutorials/django-search-tutorial)
 * [Youtube](https://www.youtube.com/watch?v=ZsJRXS_vrw0)
+* [Django Rest Framework] (https://www.django-rest-framework.org/#installation)
 
 # Future Work
 
 * Researching and building the search feature
 * Researching and building the price and where to buy feedback
 * Research and build the login and sign-up
+
+# Steps for Django Installation
+
+* sudo easy_install pip
+* python -m venv venv
+* cd venv
+* sudo pip install Django==3.2.9
+* pip install djangorestframework
