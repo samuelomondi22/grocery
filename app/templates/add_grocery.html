@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <form method='POST'> {% csrf_token %}
+    Item:
+    <select name='item'>
+      <option value={{ item }}>{{ item }}</option>
+    </select>
+    Walmart Price:
+    <input name='walmart_price' type='number'>
+    Broulims Price:
+    <input name='broulims_price' type='number'>
+    Albertsons Price:
+    <input name='albertsons_price' type='number'>
+    <input type='submit' value='Save Grocery'/>
+  <form>
+{% endblock content %}

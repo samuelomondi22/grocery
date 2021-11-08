@@ -5,8 +5,8 @@ class StockForm(forms.ModelForm):
     class Meta:
         model = groceries
         fields = [
-            'ticker',
-            'ask',
-            'bid',
-            'owned'
+            'item',
+            'walmart_price',
+            'broulims_price',
+            'albertsons_price'
         ]

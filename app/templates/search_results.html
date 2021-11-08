@@ -22,4 +22,8 @@
       </li>
     {% endfor %}
   </ul>
+
+  <form action="{% url 'add_grocery' %}" method="get">
+    <input type='submit' value='Add New Grocery' default={{grocery.item}}>
+  </form>
 {% endblock content %}
