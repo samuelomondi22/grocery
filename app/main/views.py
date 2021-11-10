@@ -25,8 +25,8 @@ def add_grocery(request):
             grocery.update(broulims_price=new_broulims_price)
             grocery.update(albertsons_price=new_albertsons_price)
         else:
-            s = groceries(item=new_item, walmart_price=new_walmart_price, broulims_price=new_broulims_price, albertsons_price=new_albertsons_price)
-            s.save()
+            g = groceries(item=new_item, walmart_price=new_walmart_price, broulims_price=new_broulims_price, albertsons_price=new_albertsons_price)
+            g.save()
 
     context = {
         'item':new_item
