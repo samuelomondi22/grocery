@@ -17,11 +17,6 @@ def add_grocery(request):
         new_walmart_price = request.POST.get('walmart_price')
         new_broulims_price = request.POST.get('broulims_price')
         new_albertsons_price = request.POST.get('albertsons_price')
-
-        if request.POST.get('owned') is None:
-            new_owned = False
-        else:
-            new_owned = request.POST.get('owned')
         
         grocery = groceries.objects.filter(item=new_item)
 
