@@ -1,6 +1,8 @@
 {% extends 'base.html' %}
 
 {% block content %}
+  <h1>Add Grocery</h1>
+  <p>Enter 0 for the stores that aren't being entered</p>
   <form method='POST'> {% csrf_token %}
     Item:
     <select name='item'>
